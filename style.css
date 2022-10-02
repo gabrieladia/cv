@@ -1,0 +1,116 @@
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;        
+     }
+     
+     .topnav{
+             display:flex;
+             justify-content: space-between;
+             
+     }
+     .topheader{
+             box-shadow: 0 4px 5px whitesmoke;
+             align-items: center;
+             justify-content: space-between;
+             float:right;
+     }
+     
+     .logo{
+             text-decoration: none;
+             display: flex;
+             align-items: center;
+             font-size: 18px;
+             font-weight: 500;
+             color: #444;
+             
+             
+     }
+     
+     .logo img{
+             border-radius: 50%;
+             align-items: center;
+     }
+     
+     body {
+             background: white;
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     
+      }
+     header{
+             background: white;
+             width: 100%;
+             clear: both;
+             content:'';
+             display: table;
+             
+      }
+      
+     .menu{
+             display: flex;
+             list-style: none;
+             width: 900px;
+             margin: 10px auto;
+             padding: 5px;
+             
+      }
+     
+     img {
+             position: center;
+             float: left;
+             padding: 0px;
+     }
+     
+     
+     
+     nav ul li {
+             list-style-type: none;
+             margin-left: 75px;
+             padding:12px 0;
+             position:relative;
+             
+     }
+     
+     nav ul li a {
+     
+             text-decoration: none;
+             color: black;
+             font-weight: bold;
+             
+             
+             
+     }
+     
+     nav ul li a::before{
+             display: block;
+             content: '';
+             width:0%;
+             background: #444;
+             height: 5px;
+             top:0;
+             position: absolute;
+             transition: width 1s;
+     }
+     
+     nav ul li a:hover:before{
+             width: 100px;
+     }
+     .horizontal-padding {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      .vertical-padding {
+        padding-top: 25px;
+        padding-bottom: 25px;
+      }
+      
+      @media (min-width: 950px) {
+        .horizontal-padding {
+          padding-left: 70px;
+          padding-right: 70px;
+        }
+        .vertical-padding {
+          padding-top: 70px;
+          padding-bottom: 70px;
+        }
+      }
